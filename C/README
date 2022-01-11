@@ -1,0 +1,35 @@
+pa7 readme
+
+make commands:
+    make - compiles Arithmetic
+    make Arithmetic - compiles Arithmetic
+    make BigIntegerTest / ListTest compiles tests
+    make clean
+
+Arithmetic.c - client use for BigInteger ADT
+BigInteger.c - ADT for very large numbers
+List.c - ADT for lists, used in BigInteger ADT
+Makefile - compiles stuff
+
+Design Decisions:
+I made the lists go from least to most significant so it would be easier to turn them from linked lists into vectors.
+I also never have negative numbers from adding and subtracting, which made things a lot easier to work with and reason about.
+
+Usage:
+make and then
+./Arithmetic "infile" "outfile"
+
+Input file format:
+Input takes in 4 lines, representing 2 numbers. The first and third line are how many digits the number is.
+Lines 2 and 4 are the number with exactly as many digits as specified, and an optional +/- sign.
+
+Output file format:
+A,
+B,
+A+B,
+A-B,
+A-A,
+3A-2B,
+A*A (A^2),
+9(A^4) + 16(b^5),
+
