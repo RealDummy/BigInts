@@ -1,4 +1,4 @@
-#Big ol' Integers
+# Big ol' Integers
 I was assigned to make an ADT that can add, subtract, and multiply arbitrarily large numbers. The assignment was in C.
 We implemented a naive solution to this because each element in the linked list is about twice as big as it needs to be.
 This is so any two elements can be multiplied together and still fit inside a uint64.
